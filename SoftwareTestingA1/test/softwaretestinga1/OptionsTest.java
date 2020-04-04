@@ -4,14 +4,10 @@ package softwaretestinga1;
 
 import java.util.Arrays;
 import java.util.Collection;
-import org.junit.Assert;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
-import org.junit.jupiter.api.TestInfo;
-import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.testng.annotations.AfterMethod;
@@ -23,19 +19,19 @@ public class OptionsTest {
      private String g;     
 
   
-     @BeforeMethod
+    @BeforeMethod
     public void details()
     {
         System.out.println("Please select the Game accroding to the Console.");
-                    System.out.println("Option for Console is :");
-                    System.out.println("1.PS4");
-                    System.out.println("2.XBOX");
-                    System.out.println("");
-                    System.out.println("Option for Games is :");
-                    System.out.println();
-                    System.out.println("1.COD PS4");
-                    System.out.println("2.COD XBOX");
-                    System.out.println("");
+        System.out.println("Option for Console is :");
+        System.out.println("1.PS4");
+        System.out.println("2.XBOX");
+        System.out.println("");
+        System.out.println("Option for Games is :");
+        System.out.println();
+        System.out.println("1.COD PS4");
+        System.out.println("2.COD XBOX");
+        System.out.println("");
     }
     public OptionsTest(String c,String g) {
         this.c=c;
@@ -229,8 +225,9 @@ public class OptionsTest {
     /**
      * Test of function4 method, of class Options.
      */
-    @Test
-    public void testFunction4() {
+    @RepeatedTest(5)
+    public void testFunction4(RepetitionInfo repetitionInfo) {
+    assertEquals(5,repetitionInfo.getTotalRepetitions());
      String v1="PS4";
      String v2="XBOX";
      String v3="COD XBOX";
