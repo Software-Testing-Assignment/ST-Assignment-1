@@ -53,7 +53,7 @@ public class OptionsTest {
      */
    
     
-    @Test
+    @Test()
     public void testFunction1() {
    
      String v1="PS4";
