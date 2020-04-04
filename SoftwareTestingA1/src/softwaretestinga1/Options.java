@@ -1,7 +1,7 @@
 package softwaretestinga1;
 import java.util.*;
 
-class MyException extends Exception
+/**class MyException extends Exception
 {
     String r;
 	MyException(String r)
@@ -12,14 +12,17 @@ class MyException extends Exception
 	{
 		return (r);
 	}
-}
+}**/
 public class Options {
+   
      public static boolean function1(String c,String g)
     {
+      
          if(c.equals("PS4") && g.equals("COD XBOX"))
             {
                     return (true);
             }
+        
          else 
          {
              return (false);
