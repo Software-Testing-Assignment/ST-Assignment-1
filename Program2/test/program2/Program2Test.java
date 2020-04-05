@@ -73,6 +73,23 @@ public class Program2Test {
     public void testFunctionMinus(RepetitionInfo repetitionInfo) {
         assertEquals(5,repetitionInfo.getTotalRepetitions());
         
+        boolean expected=true;
+        boolean value=functionAdd(a,b,c);
+        boolean value2=functionAdd(0,b,c);
+       
+        assertEquals(expected,value);
+        assertNotEquals(expected,value2);
+        
+        assertTrue(value);
+        assertFalse(value2);
+        
+        assertNotNull(value);
+        assertNotNull(value2);
+        
+        assertNotSame(expected,value2);
+        assertSame(expected,value);
+        
+       
         
         //fail();//we use this to check if it actually failed the test or not.
     }

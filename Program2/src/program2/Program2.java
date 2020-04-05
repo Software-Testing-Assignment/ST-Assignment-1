@@ -32,11 +32,6 @@ public class Program2 {
             return false;
         }
     }
-    public static void main(String[] args) {
-      /* functionAdd(1,5,6);
-       functionMinus(1,5,6);*/
-              Double v=null;
-               System.out.println(v);
-    }
+   
     
 }
